@@ -1,0 +1,6 @@
+com\mailtravel\page_object\DepartureDatePage.class
+com\mailtravel\page_object\SearchResultPage.class
+com\mailtravel\page_object\DayPriceNumberPage.class
+com\mailtravel\page_object\HomePage.class
+com\mailtravel\task_helper\TaskHelpers.class
+com\mailtravel\browserfactory\DriverHelpers.class

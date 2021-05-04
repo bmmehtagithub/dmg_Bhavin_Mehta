@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: RunCukesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 114.001 s <<< FAILURE! - in RunCukesTest
+End to end holiday package testing(Online travel and accomodation booking feature)  Time elapsed: 110.366 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: Failed to instantiate class com.mailtravel.step_def.OnlineBookingSteps
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.NoClassDefFoundError: org/openqa/selenium/internal/Locatable
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locatable
+

@@ -1,0 +1,204 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-04T09:28:28.627Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15388571700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mailtravel.hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "End to end holiday package testing",
+        "description": "",
+        "id": "online-travel-and-accomodation-booking-feature;end-to-end-holiday-package-testing",
+        "after": [
+          {
+            "result": {
+              "duration": 6435338200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mailtravel.hooks.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1154338900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on mailtravel home page",
+            "match": {
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_is_on_mailtravel_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8496516800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User input \"india\" in searchfield and press enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"india\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_input_in_searchfield_and_press_enter(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4342453200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click on more info on first search result",
+            "match": {
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_click_on_more_info_on_first_search_result()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 498238400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user can see the price \"£990\", days \"10\", telephone number \"0808 239 7870\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£990\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"0808 239 7870\"",
+                  "offset": 59
+                }
+              ],
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_can_see_the_price_days_telephone_number(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3916040000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click on book online",
+            "match": {
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_click_on_book_online()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166089900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should get the first available date with value",
+            "match": {
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_should_get_the_first_available_date_with_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 164633700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on continue",
+            "match": {
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_click_on_continue()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6238378800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User select standard room",
+            "match": {
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_select_standard_room()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2964771900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on continue without extras",
+            "match": {
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_click_on_continue_without_extras()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d90.0.4430.85)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-NKV4AE7T\u0027, ip: \u0027192.168.1.39\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.6\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4983dd72f213ef877754d66ab861f18d\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy19.getTagName(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:45)\r\n\tat com.mailtravel.page_object.DepartureDatePage.setPassengerdetails(DepartureDatePage.java:58)\r\n\tat com.mailtravel.step_def.OnlineBookingSteps.user_enter_following_passenger_detail(OnlineBookingSteps.java:94)\r\n\tat ✽.User enter following passenger detail(file:///C:/Users/Owner/IdeaProjects/dmgbhavinmehta/./src/test/java/com/mailtravel/features/onlinebooking.feature:13)\r\n",
+              "duration": 3271871700,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "User enter following passenger detail",
+            "match": {
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_enter_following_passenger_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999800,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User can see the amount as per accommodation",
+            "match": {
+              "location": "com.mailtravel.step_def.OnlineBookingSteps.user_can_see_the_amount_as_per_accomodation()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Online travel and accomodation booking feature",
+    "description": "",
+    "id": "online-travel-and-accomodation-booking-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/mailtravel/features/onlinebooking.feature",
+    "tags": []
+  }
+]
